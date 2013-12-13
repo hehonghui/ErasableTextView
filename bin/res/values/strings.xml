@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello">Hello World!</string>
+    <string name="app_name">ErasableTextView</string>
+    <string name="rule">活动规则</string>
+    <string name="text">你中奖了!!!!</string>
+    <string name="desc">.活动时间\n   2013年12月9日起~2013年12月12日止\n2.活动内容\n   活动期间,登陆游戏即有机会抽取4999红包大奖</string>
+
+</resources>
