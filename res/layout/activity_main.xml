@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/prize_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_margin="10dp" >
+
+        <TextView
+            android:id="@+id/prize_to1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/rule"
+            android:textColor="#ffd249"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/prize_to2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/prize_to1"
+            android:text="@string/desc"
+            android:textColor="#fff" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/ima"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/prize_title"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/mm_gold"
+        android:contentDescription="@string/app_name"
+        android:padding="10dp" />
+
+    <!--
+	 必须设置
+	 android:layout_width
+	 android:layout_height 
+	 的值为常量
+    -->
+
+    <com.example.erasableview.ErasableTextView
+        android:id="@+id/text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/prize_title"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="@string/text"
+        android:textColor="#fff"
+        android:textSize="15sp" />
+
+</RelativeLayout>
